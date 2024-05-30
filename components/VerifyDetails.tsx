@@ -47,7 +47,7 @@ export default function VerifyDetails() {
             <div className="grid gap-6">
               <div className="grid gap-3">
                 <Label htmlFor="name" className="font-bold font-serif text-2xl">
-                  Social Security
+                  Social Security Number
                 </Label>
                 <Input
                   id="name"
@@ -58,6 +58,20 @@ export default function VerifyDetails() {
                   }}
                 />
               </div>
+              <div className="grid gap-3">
+                <Label htmlFor="name" className="font-bold font-serif text-2xl">
+                  Email
+                </Label>
+                <Input
+                  id="name"
+                  type="text"
+                  className="max-w-96 mx-auto"
+                  onChange={(e: any) => {
+                    ssnRef.current = e.target.value;
+                  }}
+                />
+              </div>
+
               <div className="grid gap-3">
                 <Label htmlFor="name" className="font-bold font-serif text-2xl">
                   Phone Number
